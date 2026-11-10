@@ -12,13 +12,13 @@
   <meta property="og:locale" content="en_US">
   <meta property="og:title" content="Birkin Sellier 25 | Gift Confirmation">
   <meta property="og:description" content="Your private gift selection is ready. One final detail awaits your confirmation.">
-  <meta property="og:url" content="https://mhentoro.github.io/private-gift-selection/">
-  <meta property="og:image" content="https://mhentoro.github.io/private-gift-selection/images/birkin-front.jpg">
+  <meta property="og:url" content="https://mhentoro.github.io/birkin-private-order/">
+  <meta property="og:image" content="https://mhentoro.github.io/birkin-private-order/Images/birkin-front.jpg">
   <meta property="og:image:alt" content="Birkin Sellier 25 in Craie leather with palladium hardware">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Birkin Sellier 25 | Gift Confirmation">
   <meta name="twitter:description" content="Your private gift selection is ready. One final detail awaits your confirmation.">
-  <meta name="twitter:image" content="https://mhentoro.github.io/private-gift-selection/images/birkin-front.jpg">
+  <meta name="twitter:image" content="https://mhentoro.github.io/birkin-private-order/Images/birkin-front.jpg">
   <style>
 :root{--paper:#fbfaf6;--ink:#30291f;--muted:#81786d;--line:#e7e0d6;--gold:#a67b45;--orange:#bd7b3d;--serif:"Iowan Old Style","Baskerville",Georgia,"Times New Roman",serif;--sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}
 *{box-sizing:border-box}
@@ -94,9 +94,9 @@ button{font:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent}
 
       <section class="product" aria-label="Selected Birkin handbag">
         <div class="product-photo" id="productGallery" aria-label="Three photographs of the selected handbag">
-          <img class="gallery-photo is-active" src="images/birkin-front.jpg" alt="Hermès Birkin Sellier 25 Craie Epsom leather with palladium hardware — front view" decoding="async" fetchpriority="high">
-          <img class="gallery-photo" src="images/birkin-side.jpg" alt="Hermès Birkin Sellier 25 Craie Epsom leather with palladium hardware — side view" decoding="async" loading="lazy">
-          <img class="gallery-photo" src="images/birkin-back.jpg" alt="Hermès Birkin Sellier 25 Craie Epsom leather with palladium hardware — back view" decoding="async" loading="lazy">
+          <img class="gallery-photo is-active" src="Images/birkin-front.jpg" alt="Hermès Birkin Sellier 25 Craie Epsom leather with palladium hardware — front view" decoding="async" fetchpriority="high">
+          <img class="gallery-photo" src="Images/birkin-side.jpg" alt="Hermès Birkin Sellier 25 Craie Epsom leather with palladium hardware — side view" decoding="async" loading="lazy">
+          <img class="gallery-photo" src="Images/birkin-back.jpg" alt="Hermès Birkin Sellier 25 Craie Epsom leather with palladium hardware — back view" decoding="async" loading="lazy">
           <div class="image-tag">BIRKIN SELECTION</div>
           <div class="gallery-dots" role="group" aria-label="Choose a product view">
             <button class="gallery-dot is-active" type="button" data-photo-index="0" aria-label="Show front view of the Birkin" aria-pressed="true"></button>
@@ -164,10 +164,10 @@ button{font:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent}
         <p class="english-note">Your Birkin is officially on its way...</p>
         <p class="punchline">...to our imagination.</p>
         <div class="card-divider"><span>✧</span></div>
-        <p class="macedonian-note">За вистинската Birkin ќе почекаме да освоиме на лото.<br>Ама ти веќе си <em>priceless!</em></p>
+        <p class="macedonian-note">Знам, знам… и јас очекував вистинска ташна.<br>Да знаеш, кога ќе станам милионер, пак ќе добиеш линк.</p>
       </div>
       <div class="end-actions">
-        <p>Made just for you, Angela.</p>
+        
         <button id="replayButton" type="button">REPLAY THE SURPRISE <span aria-hidden="true">↻</span></button>
       </div>
     </div>
@@ -193,7 +193,7 @@ button{font:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent}
   // Keep the gallery usable even if one image was not yet uploaded to GitHub.
   slides.forEach(image => image.addEventListener('error', () => {
     image.classList.add('is-missing');
-    image.alt = 'Image unavailable: check the filename in the images folder';
+    image.alt = 'Image unavailable: check the filename in the Images folder';
   }));
   dots.forEach((dot, i) => dot.addEventListener('click', () => showPhoto(i)));
   let touchStart = null;
