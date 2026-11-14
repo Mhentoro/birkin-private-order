@@ -285,12 +285,10 @@ button{font:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent}
     // Prevent an accidental double tap on the moving button.
     moving = true;
     moveTo(clicks);
-    if (clicks === 3) {
-      hint.textContent = 'Almost there...';
-      hint.style.opacity = '1';
-    } else {
-      hint.style.opacity = '0';
-    }
+    // Same position and typography as the original 'Almost there...' hint.
+    const encouragements = ["Don't give up!", 'Keep going!', 'Almost there...'];
+    hint.textContent = encouragements[clicks - 1];
+    hint.style.opacity = '1';
     window.setTimeout(() => { moving = false; }, 590);
   });
   replayButton.addEventListener('click', () => {
